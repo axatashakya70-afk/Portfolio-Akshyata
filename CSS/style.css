@@ -1,1 +1,136 @@
-style.css
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* GENERAL */
+body {
+    background: linear-gradient(to bottom right, #e4e8ff, #f5eaff);
+    color: #333;
+    line-height: 1.7;
+    padding-bottom: 40px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #ffffffaa;
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid #c5c5ff;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333366;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #5b61ff;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: #2d2d70;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* SECTIONS */
+section {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333366;
+}
+
+/* PROJECT BOXES */
+.project-box {
+    background: #ffffffd9;
+    border: 2px solid #d8d8ff;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-box:hover {
+    transform: translateY(-4px);
+    border-color: #6d70ff;
+}
+
+/* PROJECT IMAGE */
+.project-box img {
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 10px;
+    border: 2px solid #cfcfff;
+}
+
+/* CONTACT FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #b4b4f0;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #6b6fff;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4c4fff;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+}
