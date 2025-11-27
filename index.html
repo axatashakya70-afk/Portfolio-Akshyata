@@ -2,82 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshyata Shakya - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <h1 class="logo">Akshyata Shakya</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+    <!-- HERO + NAVIGATION -->
+    <header id="hero">
+        <!-- Background Video -->
+        <video id="video-background" autoplay loop muted playsinline>
+            <source src="assets/videos/sunset.mp4" type="video/mp4">
+        </video>
+
+        <nav class="navbar">
+            <span class="logo">Akshyata Shakya</span>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile button -->
+            <button id="menu-button" class="menu-toggle" aria-expanded="false">☰</button>
         </nav>
+
+        <div class="hero-content">
+            <h1>Hello! I’m Akshyata 👋</h1>
+            <p>Cybersecurity & Networking Student • Frontend Learner</p>
+        </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h2>Hello, I'm Akshyata 👋</h2>
-        <p>I am studying BSc (Hons) Cybersecurity & Networking at Herald College Kathmandu.</p>
-        <p>This is my personal portfolio built using HTML, CSS and Git.</p>
-    </section>
-
     <!-- ABOUT -->
-    <section id="about" class="about">
+    <section id="about" class="section">
         <h2>About Me</h2>
         <p>
-            I am a cybersecurity and networking student who enjoys building web projects and learning 
-            new technologies. I love experimenting with design, interfaces, and clean layouts.
+            I am currently studying BSc (Hons) Cybersecurity & Networking at Herald College Kathmandu.
+            I enjoy working on frontend projects and experimenting with layouts, animations and clean UI.
+            This portfolio is part of my Advanced Frontend workshop.
         </p>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
 
-        <!-- PROJECT 1 -->
-        <div class="project-box">
-            <h3>Project 1: Weather App</h3>
-            <p>This was my first project built using HTML, CSS, and JavaScript.</p>
+        <div class="skills-box">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+            <div>Networking</div>
+            <div>Git / GitHub</div>
         </div>
+    </section>
 
-        <!-- PROJECT 2 -->
-        <div class="project-box">
-            <h3>Project 2: Portfolio Website</h3>
-            <p>This portfolio website is my second project.</p>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
 
-            <!-- IMAGE HERE -->
-            <img src="images/project2.png" alt="My Portfolio Screenshot">
-            
+        <div id="projects-grid">
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>This was one of the first JavaScript projects I tried. It fetches weather data from an API.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>This current website is actually one of my workshop assignments.</p>
+                <img src="images/project2.png" alt="Portfolio screenshot">
+            </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact">
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
 
-        <form>
-            <label>Name:</label>
-            <input type="text" placeholder="Enter your name" required>
+        <form id="contact-form">
+            <label>Name</label>
+            <input id="name" type="text" required>
 
-            <label>Email:</label>
-            <input type="email" placeholder="Enter your email" required>
+            <label>Email</label>
+            <input id="email" type="email" required>
 
-            <label>Message:</label>
-            <textarea placeholder="Write your message" required></textarea>
+            <label>Message</label>
+            <textarea id="message" required></textarea>
 
-            <button type="submit">Send</button>
+            <button type="submit">Send Message</button>
         </form>
+
+        <div id="form-message"></div>
 
         <p>Email: <strong>axatashakya70@gmail.com</strong></p>
     </section>
 
     <footer>
-        <p>© 2025 Akshyata Shakya. All rights reserved.</p>
+        <p>© 2025 Akshyata Shakya</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
