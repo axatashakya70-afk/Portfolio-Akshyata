@@ -1,18 +1,17 @@
-// MOBILE MENU
-const menuBtn = document.getElementById("menu-button");
+// MOBILE MENU TOGGLE
+const menuButton = document.getElementById("menu-button");
 const navLinks = document.querySelector(".nav-links");
 
-menuBtn.addEventListener("click", () => {
+menuButton.addEventListener("click", () => {
     navLinks.classList.toggle("open");
-
-    const expanded = navLinks.classList.contains("open");
-    menuBtn.setAttribute("aria-expanded", expanded);
-    menuBtn.textContent = expanded ? "✕" : "☰";
+    const isOpen = navLinks.classList.contains("open");
+    menuButton.setAttribute("aria-expanded", isOpen);
+    menuButton.textContent = isOpen ? "✕" : "☰";
 });
 
-// CONTACT FORM VALIDATION (simple)
+// FORM VALIDATION
 const form = document.getElementById("contact-form");
-const msg = document.getElementById("form-message");
+const messageBox = document.getElementById("form-message");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -21,11 +20,13 @@ form.addEventListener("submit", (e) => {
     const email = document.getElementById("email").value.trim();
 
     if (name === "" || email === "") {
-        msg.textContent = "Please fill all required fields.";
-        msg.style.color = "red";
-    } else {
-        msg.textContent = "Thank you! Your message has been received.";
-        msg.style.color = "green";
-        form.reset();
+        messageBox.textContent = "Please fill out all required fields.";
+        messageBox.style.color = "red";
+        return;
     }
+
+    messageBox.textContent = "Thank you! Your message has been sent.";
+    messageBox.style.color = "green";
+
+    form.reset();
 });

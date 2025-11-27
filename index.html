@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshyata Shakya - Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- HERO + NAVIGATION -->
+    <!-- HEADER / NAVBAR -->
     <header id="hero">
-        <!-- Background Video -->
-        <video id="video-background" autoplay loop muted playsinline>
-            <source src="assets/videos/sunset.mp4" type="video/mp4">
+        <video autoplay loop muted id="video-background">
+            <source src="video/sunset.mp4" type="video/mp4">
         </video>
 
         <nav class="navbar">
@@ -21,77 +20,74 @@
 
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <!-- Mobile button -->
-            <button id="menu-button" class="menu-toggle" aria-expanded="false">☰</button>
+            <button class="menu-toggle" id="menu-button" aria-expanded="false" aria-label="Menu Toggle">☰</button>
         </nav>
 
         <div class="hero-content">
-            <h1>Hello! I’m Akshyata 👋</h1>
-            <p>Cybersecurity & Networking Student • Frontend Learner</p>
+            <h1>Hello, I'm Akshyata 👋</h1>
+            <p>BSc (Hons) Cybersecurity & Networking Student</p>
+            <p>This is my personal portfolio built with HTML, CSS, and JavaScript.</p>
         </div>
     </header>
 
     <!-- ABOUT -->
-    <section id="about" class="section">
+    <section id="about">
         <h2>About Me</h2>
         <p>
-            I am currently studying BSc (Hons) Cybersecurity & Networking at Herald College Kathmandu.
-            I enjoy working on frontend projects and experimenting with layouts, animations and clean UI.
-            This portfolio is part of my Advanced Frontend workshop.
+            I am a cybersecurity and networking student who enjoys building simple web projects 
+            and experimenting with layouts, design and responsive structure.
         </p>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section">
+    <section id="skills">
         <h2>Skills</h2>
-
         <div class="skills-box">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>JavaScript</div>
-            <div>Networking</div>
-            <div>Git / GitHub</div>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Networking Basics</span>
+            <span>Cybersecurity Fundamentals</span>
         </div>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
+    <section id="projects">
+        <h2>My Projects</h2>
 
         <div id="projects-grid">
             <div class="project-card">
                 <h3>Weather App</h3>
-                <p>This was one of the first JavaScript projects I tried. It fetches weather data from an API.</p>
+                <p>A small project built using HTML, CSS, and JavaScript.</p>
             </div>
 
             <div class="project-card">
                 <h3>Portfolio Website</h3>
-                <p>This current website is actually one of my workshop assignments.</p>
-                <img src="images/project2.png" alt="Portfolio screenshot">
+                <p>This portfolio website is my second project.</p>
+                <img src="images/project2.png" alt="Portfolio Screenshot">
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section">
+    <section id="contact">
         <h2>Contact Me</h2>
 
         <form id="contact-form">
-            <label>Name</label>
-            <input id="name" type="text" required>
+            <label>Name:</label>
+            <input type="text" id="name" required>
 
-            <label>Email</label>
-            <input id="email" type="email" required>
+            <label>Email:</label>
+            <input type="email" id="email" required>
 
-            <label>Message</label>
+            <label>Message:</label>
             <textarea id="message" required></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">Send</button>
         </form>
 
         <div id="form-message"></div>
@@ -100,9 +96,9 @@
     </section>
 
     <footer>
-        <p>© 2025 Akshyata Shakya</p>
+        <p>© 2025 Akshyata Shakya | All Rights Reserved</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
