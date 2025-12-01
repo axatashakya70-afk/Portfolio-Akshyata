@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "name": "Akshyata",
+      "age": 19
+    },
+    {
+      "name": "Arahant",
+      "age": 10
+    },
+    {
+      "id": "4f8c",
+      "name": "Ajaya Shakya",
+      "age": "43"
+    },
+    {
+      "id": "058d",
+      "name": "Soneema Shakya",
+      "age": "41"
+    }
+  ],
+  "profile": [
+    {
+      "name": "hotwheelsJDM",
+      "description": "Hot Wheels JDM (Japanese Domestic Market) refers to a highly popular and collectible line of die-cast vehicles that celebrates iconic Japanese automotive culture"
+    }
+  ]
+}

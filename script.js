@@ -1,17 +1,15 @@
-// MOBILE MENU TOGGLE
+// MOBILE MENU
 const menuButton = document.getElementById("menu-button");
-const navLinks = document.querySelector(".nav-links");
+const navLinks = document.getElementById("nav-links");
 
 menuButton.addEventListener("click", () => {
     navLinks.classList.toggle("open");
-    const isOpen = navLinks.classList.contains("open");
-    menuButton.setAttribute("aria-expanded", isOpen);
-    menuButton.textContent = isOpen ? "✕" : "☰";
+    menuButton.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
 });
 
-// FORM VALIDATION
+// CONTACT FORM MESSAGE
 const form = document.getElementById("contact-form");
-const messageBox = document.getElementById("form-message");
+const msg = document.getElementById("form-message");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -20,13 +18,12 @@ form.addEventListener("submit", (e) => {
     const email = document.getElementById("email").value.trim();
 
     if (name === "" || email === "") {
-        messageBox.textContent = "Please fill out all required fields.";
-        messageBox.style.color = "red";
+        msg.textContent = "Please fill all fields.";
+        msg.style.color = "#ff4b4b";
         return;
     }
 
-    messageBox.textContent = "Thank you! Your message has been sent.";
-    messageBox.style.color = "green";
-
+    msg.textContent = "Message sent successfully!";
+    msg.style.color = "#00eaff";
     form.reset();
 });

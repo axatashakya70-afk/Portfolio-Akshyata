@@ -1,51 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshyata Shakya - Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- HEADER / NAVBAR -->
+    <!-- HEADER -->
     <header id="hero">
-        <video autoplay loop muted id="video-background">
+        <video autoplay loop muted playsinline id="video-background">
             <source src="video/sunset.mp4" type="video/mp4">
         </video>
 
         <nav class="navbar">
-            <span class="logo">Akshyata Shakya</span>
+            <span class="logo">Akshyata</span>
 
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-            <button class="menu-toggle" id="menu-button" aria-expanded="false" aria-label="Menu Toggle">☰</button>
+            <button class="menu-toggle" id="menu-button">☰</button>
         </nav>
 
-        <div class="hero-content">
-            <h1>Hello, I'm Akshyata 👋</h1>
+        <div class="hero-content fade-up">
+            <h1>Hello, I'm <span class="highlight">Akshyata</span> 👋</h1>
             <p>BSc (Hons) Cybersecurity & Networking Student</p>
-            <p>This is my personal portfolio built with HTML, CSS, and JavaScript.</p>
+            <p>Welcome to my portfolio website.</p>
         </div>
     </header>
 
     <!-- ABOUT -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
+    <section id="about" class="fade-up">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-text">
             I am a cybersecurity and networking student who enjoys building simple web projects 
-            and experimenting with layouts, design and responsive structure.
+            and experimenting with layouts, UI, and responsive design.
         </p>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills">
-        <h2>Skills</h2>
+    <section id="skills" class="fade-up">
+        <h2 class="section-title">Skills</h2>
+
         <div class="skills-box">
             <span>HTML</span>
             <span>CSS</span>
@@ -56,26 +60,28 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects">
-        <h2>My Projects</h2>
+    <section id="projects" class="fade-up">
+        <h2 class="section-title">Projects</h2>
 
         <div id="projects-grid">
+
             <div class="project-card">
                 <h3>Weather App</h3>
-                <p>A small project built using HTML, CSS, and JavaScript.</p>
+                <p>A simple weather app built using JavaScript API.</p>
             </div>
 
             <div class="project-card">
                 <h3>Portfolio Website</h3>
-                <p>This portfolio website is my second project.</p>
+                <p>This website you are seeing now!</p>
                 <img src="images/project2.png" alt="Portfolio Screenshot">
             </div>
+
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <section id="contact" class="fade-up">
+        <h2 class="section-title">Contact Me</h2>
 
         <form id="contact-form">
             <label>Name:</label>
@@ -101,4 +107,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
